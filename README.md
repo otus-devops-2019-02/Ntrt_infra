@@ -22,3 +22,16 @@ Host someinternalhost
     ProxyCommand ssh -W %h:%p bastion
 ```
 Подключиться к Someinternalhost теперь можно командой: `ssh someinternalhost`
+
+Адреса инстансов:
+```
+bastion_IP = 35.204.73.227
+someinternalhost_IP = 10.164.0.3
+```
+
+После настройки Pritunl подключиться к нему можно командой:
+`openvpn --config cloud-bastion.ovpn`
+или используя vpn-клиент типа Tunnelblick.
+
+Так же Pritunl автоматически выдает SSL сертификат на указанный в настройках домен.
+Указываем домен `35.204.73.227.sslip.io`, который будет разрезовлен во внешний ip Bastionhost.
