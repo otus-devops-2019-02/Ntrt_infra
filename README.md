@@ -1,6 +1,17 @@
 # Ntrt_infra
 Ntrt Infra repository
 
+### HW 4 Cloud-testapp
+
+Адрес инстанса:
+```
+testapp_IP = 35.204.9.219
+testapp_port = 9292
+```
+
+
+===========================
+
 ### HW 3 Cloud-bastion
 
 Подключение в одну команду к Someinternalhost пользователем c32exe:
